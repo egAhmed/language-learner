@@ -1,0 +1,61 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+        Magar Language
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        LEARN
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+        GRAMMAR
+      </ion-segment-button>
+      <ion-segment-button value="ducklings">
+        GAMES
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'puppies'">
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'kittens'">
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'ducklings'">
+    </ion-list>
+  </div>
+</ion-content>
+
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage(homePage)">
+        Home
+      </button>
+      <button ion-item (click)="openPage(friendsPage)">
+        Friends
+      </button>
+      <button ion-item (click)="openPage(eventsPage)">
+        Events
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Close Menu
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
