@@ -1,12 +1,14 @@
 .toolbar-background-md {
     border-color: #b2b2b2;
-    background: #923ca7;
+    background: #3ca767;
+    /*background: #923ca7;*/
     /*background: #35b0c3;#3858e0;*/
     color: #fff;
  }
 
  .tabs-md .tabbar {
-    background: #923ca7;
+    background: #3ca767;
+    /*background: #923ca7;*/
     color:#fff;
 }
 
@@ -30,3 +32,7 @@
     opacity: 1;
 }
 
+.splash{
+    background-color: #dfdfdf;
+    margin:auto;
+}
