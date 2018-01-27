@@ -10,6 +10,7 @@ import { BasicDialougesPage } from '../pages/basic-dialouges/basic-dialouges';
 import { AdvancedDialougesPage } from '../pages/advanced-dialouges/advanced-dialouges';
 import { ReadWriteLippiPage } from '../pages/read-write-lippi/read-write-lippi';
 import { TestSkillsPage } from '../pages/test-skills/test-skills';
+import { DonationPage } from '../pages/donation/donation';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BasicDialougesPage,
     AdvancedDialougesPage,
     ReadWriteLippiPage,
-    TestSkillsPage
+    TestSkillsPage,
+    DonationPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BasicDialougesPage,
     AdvancedDialougesPage,
     ReadWriteLippiPage,
-    TestSkillsPage
+    TestSkillsPage,
+    DonationPage
   ],
   providers: [
     StatusBar,
